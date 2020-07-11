@@ -1,0 +1,15 @@
+/* Positioning absolute */
+@mixin position($type, $top, $right, $bottom, $left) {
+    position: $type;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+/* Centering */
+@mixin centerFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
