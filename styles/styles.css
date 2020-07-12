@@ -225,3 +225,27 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Positioning absolute */
+/* Centering */
+/* 
+    font-family: 'Kumar One', cursive;
+
+    font-family: 'Kumar One Outline', cursive;
+
+    font-family: 'Lato', sans-serif;
+*/
