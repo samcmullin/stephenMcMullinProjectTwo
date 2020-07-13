@@ -37,6 +37,7 @@ h1 {
     line-height: 64px;
     font-weight: 400;
     font-family: $headerFont;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -44,10 +45,20 @@ h2 {
     font-size: 3.3rem;
     line-height: 58px;
     letter-spacing: 2.1px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 i {
     border-radius: 50%;
     background: $boxShadowColor;
     padding: 10px;
+}
+
+.mainButton { 
+    padding: 15px 20px;
+    background: $buttonColor;
+    font-family: $sectionTitleFont;
+    text-decoration: none;
+    color: white;
 }

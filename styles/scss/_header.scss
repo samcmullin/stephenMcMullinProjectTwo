@@ -11,6 +11,7 @@
             text-decoration: none;
             letter-spacing: 1.4px;
             line-height: 29px;
+            text-transform: uppercase;
         }
     }
 }
@@ -31,7 +32,6 @@
         &:hover, &:focus {
             
             text-decoration: underline;
-            
             text-decoration-thickness: 3px;
             text-decoration-color: $boxShadowColor;
             transition: ease-out 0.3s;
@@ -45,7 +45,7 @@
     height: 100vh;
     img {
         position: absolute;
-        bottom: 0;
+        bottom: -120px;
         left: 0;
     }
 

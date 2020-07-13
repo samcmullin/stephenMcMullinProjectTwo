@@ -267,6 +267,7 @@ h1 {
   line-height: 64px;
   font-weight: 400;
   font-family: "Kumar One Outline", cursive;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -274,12 +275,22 @@ h2 {
   font-size: 3.3rem;
   line-height: 58px;
   letter-spacing: 2.1px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 i {
   border-radius: 50%;
   background: #F8FB05;
   padding: 10px;
+}
+
+.mainButton {
+  padding: 15px 20px;
+  background: #065635;
+  font-family: "Kumar One", cursive;
+  text-decoration: none;
+  color: white;
 }
 
 /* Main page header */
@@ -304,6 +315,7 @@ i {
   text-decoration: none;
   letter-spacing: 1.4px;
   line-height: 29px;
+  text-transform: uppercase;
 }
 
 .mainPage a {
@@ -339,7 +351,7 @@ i {
 
 .mainPage header img {
   position: absolute;
-  bottom: 0;
+  bottom: -120px;
   left: 0;
 }
 
@@ -355,36 +367,36 @@ section.newMaterials {
   background: #F5F5F5;
 }
 
-section.newMaterials .wrapper {
+section.newMaterials .discoverMaterials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 50px;
 }
 
-section.newMaterials .wrapper div.discoverContent {
+section.newMaterials .discoverMaterials div.discoverContent {
   width: 70%;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 500px;
           flex: 1 0 500px;
   margin-right: 150px;
+  margin-bottom: 150px;
+  margin-top: 150px;
 }
 
-section.newMaterials .wrapper div.discoverImage {
+section.newMaterials .discoverMaterials div.discoverImage {
   width: 30%;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 200px;
           flex: 1 0 200px;
+  margin-top: 150px;
 }
 
-section.newMaterials .wrapper div.discoverImage img {
-  -webkit-box-shadow: -10px 10px #F8FB05;
-          box-shadow: -10px 10px #F8FB05;
+section.newMaterials .discoverMaterials div.discoverImage img {
+  -webkit-box-shadow: -20px 20px #F8FB05;
+          box-shadow: -20px 20px #F8FB05;
 }
 
 section.mainGalleryImages {
@@ -462,6 +474,24 @@ section.groupPrograms .programsLocations {
 
 section.groupPrograms .programsLocations div {
   width: 50%;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 500px;
+          flex: 1 0 500px;
+  padding: 30px;
+}
+
+section.groupPrograms .programsLocations div img {
+  -webkit-box-shadow: 20px 20px #F8FB05;
+          box-shadow: 20px 20px #F8FB05;
+}
+
+/* Main @media Queries */
+@media (max-width: 800px) {
+  .discoverImage {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 /* Blog Page Main Styles */

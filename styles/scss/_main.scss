@@ -3,23 +3,26 @@
 section.newMaterials {
     background: $contentBoxColor;
 
-    .wrapper {
+    .discoverMaterials {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        
         padding-top: 50px;
 
         div.discoverContent {
             width: 70%;
             flex: 1 0 500px;
             margin-right: 150px;
+            margin-bottom: 150px;
+            margin-top: 150px;
         }
 
         div.discoverImage {
             width: 30%;
             flex: 1 0 200px;
+            margin-top: 150px;
             img {
-                box-shadow: -10px 10px $boxShadowColor;
+                box-shadow: -20px 20px $boxShadowColor;
             }
         }
     }
@@ -64,10 +67,17 @@ section.groupPrograms {
         flex-wrap: wrap;
         div {
             width: 50%;
+            position: relative;
+            flex: 1 0 500px;
+            padding: 30px;
+            img {
+                box-shadow: 20px 20px $boxShadowColor;
+            }
         }
     }
 }
 
+/* Main @media Queries */
 
 /* Blog Page Main Styles */
 
