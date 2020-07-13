@@ -44,6 +44,11 @@ section.mainGalleryImages {
 section.companyMedia {
     background: $contentBoxColor;
     .companyMediaFlex {
-        display: flex;
+        @include centerFlex();
+        flex-wrap: wrap;
+        .card {
+            flex: 1 0 600px;
+            padding: 40px 20px;
+        }
     }
 }

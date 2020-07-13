@@ -416,4 +416,19 @@ section.companyMedia .companyMediaFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.companyMedia .companyMediaFlex .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 600px;
+          flex: 1 0 600px;
+  padding: 40px 20px;
 }
