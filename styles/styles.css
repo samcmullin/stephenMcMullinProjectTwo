@@ -322,11 +322,13 @@ i {
   padding: 10px 20px;
 }
 
-.mainPage nav a:hover {
+.mainPage nav a:hover, .mainPage nav a:focus {
   text-decoration: underline;
   text-decoration-thickness: 3px;
   -webkit-text-decoration-color: #F8FB05;
           text-decoration-color: #F8FB05;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 
 .mainPage header {
@@ -433,8 +435,34 @@ section.companyMedia .companyMediaFlex {
 }
 
 section.companyMedia .companyMediaFlex .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 600px;
           flex: 1 0 600px;
   padding: 40px 20px;
 }
+
+section.companyMedia .companyMediaFlex .card i {
+  margin-right: 20px;
+}
+
+section.groupPrograms {
+  background: #E0FDDF;
+}
+
+section.groupPrograms .programsLocations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.groupPrograms .programsLocations div {
+  width: 50%;
+}
+
+/* Blog Page Main Styles */
+/* Contact Page Main Styles */

@@ -28,10 +28,13 @@
         text-decoration: none;
         padding: 10px 20px;
         
-        &:hover {
+        &:hover, &:focus {
+            
             text-decoration: underline;
+            
             text-decoration-thickness: 3px;
             text-decoration-color: $boxShadowColor;
+            transition: ease-out 0.3s;
         }
     }
 }

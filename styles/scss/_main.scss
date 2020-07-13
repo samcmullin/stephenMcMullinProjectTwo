@@ -47,8 +47,29 @@ section.companyMedia {
         @include centerFlex();
         flex-wrap: wrap;
         .card {
+            display: flex;
             flex: 1 0 600px;
             padding: 40px 20px;
+            i {
+                margin-right: 20px;
+            }
         }
     }
 }
+
+section.groupPrograms {
+    background: $mainBodyColor;
+    .programsLocations {
+        display: flex;
+        flex-wrap: wrap;
+        div {
+            width: 50%;
+        }
+    }
+}
+
+
+/* Blog Page Main Styles */
+
+
+/* Contact Page Main Styles */
