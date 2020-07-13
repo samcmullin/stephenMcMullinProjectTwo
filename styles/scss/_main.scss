@@ -24,3 +24,26 @@ section.newMaterials {
         }
     }
 }
+
+section.mainGalleryImages {
+    background: $mainBodyColor;
+
+    .galleryImagesFlex {
+        @include centerFlex();
+        flex-wrap: wrap;
+        li {
+            flex: 1 0 400px;
+            padding: 40px 30px;
+            img {
+                width: calc(100% - 60px);
+            }
+        }
+    }
+}
+
+section.companyMedia {
+    background: $contentBoxColor;
+    .companyMediaFlex {
+        display: flex;
+    }
+}

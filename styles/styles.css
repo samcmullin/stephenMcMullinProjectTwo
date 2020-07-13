@@ -228,13 +228,6 @@ html {
 
 /* Positioning absolute */
 /* Centering */
-/* 
-    font-family: 'Kumar One', cursive;
-
-    font-family: 'Kumar One Outline', cursive;
-
-    font-family: 'Lato', sans-serif;
-*/
 html {
   font-size: 62.5%;
 }
@@ -384,4 +377,43 @@ section.newMaterials .wrapper div.discoverImage {
 section.newMaterials .wrapper div.discoverImage img {
   -webkit-box-shadow: -10px 10px #F8FB05;
           box-shadow: -10px 10px #F8FB05;
+}
+
+section.mainGalleryImages {
+  background: #E0FDDF;
+}
+
+section.mainGalleryImages .galleryImagesFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.mainGalleryImages .galleryImagesFlex li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 400px;
+          flex: 1 0 400px;
+  padding: 40px 30px;
+}
+
+section.mainGalleryImages .galleryImagesFlex li img {
+  width: calc(100% - 60px);
+}
+
+section.companyMedia {
+  background: #F5F5F5;
+}
+
+section.companyMedia .companyMediaFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
