@@ -276,6 +276,12 @@ h2 {
   letter-spacing: 2.1px;
 }
 
+i {
+  border-radius: 50%;
+  background: #F8FB05;
+  padding: 10px;
+}
+
 /* Main page header */
 .mainPage header nav {
   display: -webkit-box;
