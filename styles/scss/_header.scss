@@ -1,0 +1,59 @@
+/* Main page header */
+
+.mainPage header nav {
+    display: flex;
+    justify-content: flex-end;
+    li {
+    display: inline;
+    padding-left: 30px;
+    flex: 1 0 auto;
+        a {
+            text-decoration: none;
+            letter-spacing: 1.4px;
+            line-height: 29px;
+        }
+    }
+}
+
+.mainPage a {
+    font-style: $bodyFont;
+    font-size: 2rem;
+    color: $fontColor;
+    text-transform: uppercase;
+}
+
+.mainPage nav {
+    font-weight: 700;
+    a {
+        text-decoration: none;
+        padding: 10px 20px;
+        
+        &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-decoration-color: $boxShadowColor;
+        }
+    }
+}
+
+.mainPage header {
+    background: url(../../assets/header-home.jpg);
+    background-size: cover;
+    height: 100vh;
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    h1 {
+        width: 100px;
+        padding-top: 30px;
+    }
+}
+
+
+/* Blog page header */
+
+
+/* Contact page header */

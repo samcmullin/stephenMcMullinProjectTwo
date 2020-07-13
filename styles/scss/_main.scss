@@ -1,0 +1,26 @@
+/* Main Page Styles */
+
+section.newMaterials {
+    background: $contentBoxColor;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 50px;
+
+        div.discoverContent {
+            width: 70%;
+            flex: 1 0 500px;
+            margin-right: 150px;
+        }
+
+        div.discoverImage {
+            width: 30%;
+            flex: 1 0 200px;
+            img {
+                box-shadow: -10px 10px $boxShadowColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1250px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-size: 2rem;
+    font-family: $bodyFont;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 32px;
+}
+
+h1,
+h2,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 6.8rem;
+    line-height: 64px;
+    font-weight: 400;
+    font-family: $headerFont;
+}
+
+h2 {
+    font-family: $sectionTitleFont;
+    font-size: 3.3rem;
+    line-height: 58px;
+    letter-spacing: 2.1px;
+}
