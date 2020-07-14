@@ -234,7 +234,7 @@ html {
 
 .wrapper {
   max-width: 1250px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -286,11 +286,10 @@ i {
 }
 
 .mainButton {
-  padding: 15px 20px;
+  padding: 5px 20px;
   background: #065635;
   font-family: "Kumar One", cursive;
   text-decoration: none;
-  color: white;
 }
 
 /* Main page header */
@@ -375,6 +374,10 @@ section.newMaterials .discoverMaterials {
       flex-wrap: wrap;
   padding-bottom: 100px;
   padding-top: 150px;
+}
+
+section.newMaterials .discoverMaterials p {
+  padding-bottom: 20px;
 }
 
 section.newMaterials .discoverMaterials div.discoverContent {
@@ -472,11 +475,15 @@ section.groupPrograms .programs {
       flex-wrap: wrap;
 }
 
+section.groupPrograms .programs .programsImage {
+  padding-right: 50px;
+}
+
 section.groupPrograms .programs div {
   width: 50%;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 300px;
-          flex: 1 0 300px;
+      -ms-flex: 1 0 500px;
+          flex: 1 0 500px;
   padding-top: 100px;
 }
 
@@ -522,6 +529,53 @@ section.groupPrograms .locations div img {
           box-shadow: 20px 20px #F8FB05;
 }
 
+section.styleSearch {
+  background: #F5F5F5;
+}
+
+section.styleSearch .styleTextContent {
+  text-align: center;
+  padding: 50px 0;
+}
+
+section.styleSearch .styleTextContent h2 {
+  padding-bottom: 10px;
+}
+
+section.styleSearch .styleTextContent p {
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+footer {
+  background: #151514;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
 /* Main @media Queries */
+@media (max-width: 1050px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  .programs {
+    text-align: center;
+  }
+  .locations {
+    text-align: center;
+  }
+  .locations .locationImage {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
 /* Blog Page Main Styles */
 /* Contact Page Main Styles */
