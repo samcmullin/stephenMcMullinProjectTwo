@@ -1,3 +1,6 @@
+// DEBUGGING! Select ALL elements and add red border
+// * {border: 1px solid red; } 
+
 html {
     font-size: 62.5%;
 }
@@ -60,5 +63,5 @@ i {
     background: $buttonColor;
     font-family: $sectionTitleFont;
     text-decoration: none;
-
+    color: white;
 }

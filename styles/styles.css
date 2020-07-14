@@ -290,6 +290,7 @@ i {
   background: #065635;
   font-family: "Kumar One", cursive;
   text-decoration: none;
+  color: white;
 }
 
 /* Main page header */
@@ -390,11 +391,11 @@ nav a:hover, nav a:focus {
 
 /* Contact page header */
 /* Main Page Styles */
-section.newMaterials {
+.newMaterials {
   background: #F5F5F5;
 }
 
-section.newMaterials .discoverMaterials {
+.newMaterials .discoverMaterials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,27 +405,24 @@ section.newMaterials .discoverMaterials {
   padding-top: 150px;
 }
 
-section.newMaterials .discoverMaterials p {
+.newMaterials .discoverMaterials p {
   padding-bottom: 20px;
 }
 
-section.newMaterials .discoverMaterials div.discoverContent {
-  width: 70%;
+.newMaterials .discoverMaterials div.discoverContent {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 500px;
-          flex: 1 0 500px;
-  margin-right: 150px;
-  height: 100%;
+      -ms-flex: 1 0 300px;
+          flex: 1 0 300px;
+  padding: 20px;
 }
 
-section.newMaterials .discoverMaterials div.discoverImage {
-  width: 30%;
+.newMaterials .discoverMaterials div.discoverImage {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 300px;
           flex: 0 0 300px;
 }
 
-section.newMaterials .discoverMaterials div.discoverImage img {
+.newMaterials .discoverMaterials div.discoverImage img {
   -webkit-box-shadow: -20px 20px #F8FB05;
           box-shadow: -20px 20px #F8FB05;
 }
@@ -451,7 +449,7 @@ section.mainGalleryImages .galleryImagesFlex li {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 400px;
           flex: 1 0 400px;
-  padding: 40px 30px;
+  padding: 40px 0;
 }
 
 section.mainGalleryImages .galleryImagesFlex li img {
@@ -460,7 +458,6 @@ section.mainGalleryImages .galleryImagesFlex li img {
 
 section.companyMedia {
   background: #F5F5F5;
-  width: 100%;
 }
 
 section.companyMedia .companyMediaFlex {
@@ -482,9 +479,9 @@ section.companyMedia .companyMediaFlex .card {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 600px;
-          flex: 1 0 600px;
-  padding: 40px 20px 100px 20px;
+      -ms-flex: 1 0 500px;
+          flex: 1 0 500px;
+  padding: 40px 20px;
 }
 
 section.companyMedia .companyMediaFlex .card i {
@@ -506,13 +503,19 @@ section.groupPrograms .programs {
 
 section.groupPrograms .programs .programsImage {
   padding-right: 50px;
+  max-width: 700px;
+}
+
+section.groupPrograms .programs .programsTextContent {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 300px;
+          flex: 1 0 300px;
 }
 
 section.groupPrograms .programs div {
-  width: 50%;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 500px;
-          flex: 1 0 500px;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
   padding-top: 100px;
 }
 
@@ -537,11 +540,17 @@ section.groupPrograms .locations {
       flex-wrap: wrap;
 }
 
-section.groupPrograms .locations div {
-  width: 50%;
+section.groupPrograms .locations .locationsTextContent {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 500px;
-          flex: 1 0 500px;
+      -ms-flex: 1 0 300px;
+          flex: 1 0 300px;
+}
+
+section.groupPrograms .locations div {
+  width: 300px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
   padding-top: 100px;
 }
 
@@ -586,6 +595,42 @@ footer p {
 }
 
 /* Blog Page Main Styles */
+.blogMain {
+  background: #E0FDDF;
+}
+
+.blogMain .blogMainPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 10px solid #F8FB05;
+  width: 60%;
+}
+
+.blogMain .blogMainPost .blogContent {
+  background: #F5F5F5;
+  padding: 10px;
+}
+
+.blogMain .blogMainPost aside {
+  position: absolute;
+  right: 0;
+  width: 20%;
+}
+
+.blogMain .blogMainPost aside img {
+  -webkit-box-shadow: -20px 20px #F8FB05;
+          box-shadow: -20px 20px #F8FB05;
+}
+
+.blogMain .blogMainPost img {
+  -webkit-box-shadow: 20px 20px #F8FB05;
+          box-shadow: 20px 20px #F8FB05;
+}
+
 /* Contact Page Main Styles */
 /* Main @media Queries */
 @media (max-width: 1050px) {
@@ -601,7 +646,7 @@ footer p {
   .locations {
     text-align: center;
   }
-  .locations .locationImage {
+  .locations .locationsImage {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
