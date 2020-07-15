@@ -618,6 +618,11 @@ footer p {
   text-align: center;
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Blog Page Main Styles */
 .blogMain {
   background: #E0FDDF;
@@ -667,6 +672,11 @@ footer p {
           box-shadow: -20px 20px #F8FB05;
 }
 
+.blogMain .blogMainPost aside ul {
+  list-style: disc;
+  padding-left: 15px;
+}
+
 .blogMain .blogMainPost .mainBlogImage {
   -webkit-box-shadow: 20px 20px #F8FB05;
           box-shadow: 20px 20px #F8FB05;
@@ -697,25 +707,32 @@ footer p {
 }
 
 .blogMain .blogMainPost form {
-  width: 100%;
+  margin-top: 40px;
 }
 
 .blogMain .blogMainPost form input {
   background: #E0FDDF;
-  width: 350px;
+  width: 46%;
   display: inline;
-  margin-right: 22px;
-  margin-bottom: 20px;
+  margin: 0 27px 50px 0;
+  outline: none;
   border: 0;
   border-bottom: 1px solid #065635;
 }
 
 .blogMain .blogMainPost form textarea {
   background: #E0FDDF;
-  width: 740px;
+  width: 100%;
   resize: none;
   border: 1px solid #065635;
   height: 200px;
+}
+
+.blogMain .blogMainPost form button {
+  width: 100%;
+  border: 0;
+  padding: 15px 0;
+  margin: 40px 0;
 }
 
 /* Contact Page Main Styles */

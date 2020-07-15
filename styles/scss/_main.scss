@@ -160,6 +160,11 @@ footer {
         text-align: center;
     }
 
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
 }
 
 /* Blog Page Main Styles */
@@ -197,6 +202,10 @@ footer {
             img {
                 box-shadow: -20px 20px $boxShadowColor;
             }
+            ul {
+                list-style: disc; 
+                padding-left: 15px;
+            }
         }
 
         .mainBlogImage {
@@ -225,25 +234,38 @@ footer {
         }
 
         form {
-            width: 100%;
+            margin-top: 40px;
             input {
                 background: $mainBodyColor;
-                width: 350px;
+                // width: 350px;
+                width: 46%;
                 display: inline;
-                margin-right: 22px;
-                margin-bottom: 20px;
+                margin: 0 27px 50px 0;
+                outline: none;
+                // margin-right: 22px;
+                // margin-bottom: 20px;
                 border: 0;
                 border-bottom: 1px solid $buttonColor;
             
             }
             textarea {
                 background: $mainBodyColor;
-                width: 740px;
+                // width: 740px;
+                width: 100%;
                 resize: none;
                 border: 1px solid $buttonColor;
                 height: 200px;
             }
-            
+            button {
+                width: 100%;
+                border: 0;
+                padding: 15px 0;
+                margin: 40px 0;
+                // text-transform: uppercase;
+                // background: $buttonColor;
+                // border: 0;
+                // padding: 20px 0;
+            }
         }
     }
 }
