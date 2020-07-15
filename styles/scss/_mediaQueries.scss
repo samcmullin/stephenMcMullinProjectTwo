@@ -1,4 +1,13 @@
 /* Main @media Queries */
+
+@media (max-width: 1165px){
+    .groupPrograms {
+        img {
+            display: none;
+        }
+    }
+
+}
 @media (max-width: 1050px) {
 
     h1 {
