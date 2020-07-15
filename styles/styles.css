@@ -641,10 +641,23 @@ footer p {
   border-bottom: 10px solid #F8FB05;
 }
 
+.blogMain .blogMainPost .blogContent h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.blogMain .blogMainPost .blogContent p {
+  margin: 20px 0;
+}
+
+.blogMain .blogMainPost .commentHeader {
+  margin: 100px 0;
+}
+
 .blogMain .blogMainPost aside {
   position: absolute;
   right: 0;
-  width: 20%;
+  max-width: 25%;
   background: #F8FB05;
   border-left: 20px solid #F8FB05;
 }
@@ -654,9 +667,55 @@ footer p {
           box-shadow: -20px 20px #F8FB05;
 }
 
-.blogMain .blogMainPost img {
+.blogMain .blogMainPost .mainBlogImage {
   -webkit-box-shadow: 20px 20px #F8FB05;
           box-shadow: 20px 20px #F8FB05;
+}
+
+.blogMain .blogMainPost .commentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogMain .blogMainPost .commentBox .commentUserImage {
+  width: 20%;
+  padding: 30px 20px 0 0;
+}
+
+.blogMain .blogMainPost .commentBox .commentContentBox {
+  width: 80%;
+}
+
+.blogMain .blogMainPost .commentBox .commentContentBox .commentUserName {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.blogMain .blogMainPost .commentBox .commentContentBox p {
+  margin: 20px 0;
+}
+
+.blogMain .blogMainPost form {
+  width: 100%;
+}
+
+.blogMain .blogMainPost form input {
+  background: #E0FDDF;
+  width: 350px;
+  display: inline;
+  margin-right: 22px;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid #065635;
+}
+
+.blogMain .blogMainPost form textarea {
+  background: #E0FDDF;
+  width: 740px;
+  resize: none;
+  border: 1px solid #065635;
+  height: 200px;
 }
 
 /* Contact Page Main Styles */

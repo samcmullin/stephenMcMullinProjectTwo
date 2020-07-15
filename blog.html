@@ -32,7 +32,7 @@
 
                     
                     <div class="blogContent">
-                        <img src="assets/blog-post-image.jpg" alt="A blue couch with white cushions">
+                        <img src="assets/blog-post-image.jpg" class="mainBlogImage" alt="A blue couch with white cushions">
                     
                         <h2>Finding The Right Pieces For New Space</h2>
                         <p><time datetime="2019-10-5">Monday, October 5th, 2019</time> by Saron</p>
@@ -59,44 +59,44 @@
                         </div>
                     </aside>
                 
-                    <div>
-                        <h2>Comments</h2>
+                    <div class="commentHeader">
+                        <h2>Comments:</h2>
                     </div>
     
-                    <div>
-                        <div>
+                    <div class="commentBox">
+                        <div class="commentUserImage">
                             <img src="assets/comment-image.jpg" alt="User's photograph that is commenting">
                         </div>
-                        <div>
-                            <p><time datetime="2019-10-9">Tuesday October 9th, 2019</time> by Davin</p>
+                        <div class="commentContentBox">
+                            <p><time datetime="2019-10-9">Tuesday October 9th, 2019</time> <span class="commentUserName">by Davin</span></p>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident alias praesentium magni cumque! Quas laudantium voluptatem, eius suscipit eveniet reprehenderit explicabo fugiat voluptatibus optio! Suscipit, nam architecto. Quasi quod sit enim. Commodi dolor autem fugiat ad, error pariatur numquam quas?</p>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="commentBox">
+                        <div class="commentUserImage">
                             <img src="assets/comment-image2.jpg" alt="User's photograph of a zebra">
                         </div>
-                        <div>
-                            <p><time datetime="2019-10-10">Wednesday October 10th, 2019</time> by Lisa</p>
+                        <div class="commentContentBox">
+                            <p><time datetime="2019-10-10">Wednesday October 10th, 2019</time> <span class="commentUserName">by Lisa</span></p>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea neque, beatae expedita nisi obcaecati optio similique vitae a iste consequuntur delectus eveniet facilis assumenda eligendi id tenetur, dolorum numquam.</p>
                         </div>
                     </div>
     
                     <form action="POST">
                         <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Name" aria-label="name">
+                        <input type="text" id="name" name="name" placeholder="NAME" aria-label="name">
                         <label for="email"></label>
-                        <input type="text" id="email" name="email" placeholder="Email Address" aria-label="email">
+                        <input type="text" id="email" name="email" placeholder="EMAIL ADDRESS" aria-label="email">
         
                         <textarea name="comment" id="comment"></textarea>
         
                         <button>Post Comment</button>
                     </form>
+                    
                 </div>
-                
+
             </div>
         </section>
-
 
         
     </main>

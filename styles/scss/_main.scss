@@ -165,8 +165,7 @@ footer {
 /* Blog Page Main Styles */
 
 .blogMain {
-
-background: $mainBodyColor;
+    background: $mainBodyColor;
     .blogMainPost {
         display: flex;
         flex-direction: column;
@@ -176,13 +175,23 @@ background: $mainBodyColor;
             padding: 10px;
             border-right: 10px solid $boxShadowColor;
             border-bottom: 10px solid $boxShadowColor;
+            h2 {
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 20px 0;
+            }
+        }
 
+        .commentHeader {
+            margin: 100px 0; 
         }
 
         aside {
             position: absolute;
             right: 0;
-            width: 20%;
+            max-width: 25%;
             background: $boxShadowColor;
             border-left: 20px solid $boxShadowColor;
             img {
@@ -190,11 +199,53 @@ background: $mainBodyColor;
             }
         }
 
-        img {
-            box-shadow: 20px 20px $boxShadowColor;
-            
+        .mainBlogImage {
+            box-shadow: 20px 20px $boxShadowColor;  
         }
 
+        .commentBox {
+            display: flex;
+
+            .commentUserImage {
+                width: 20%;
+                padding: 30px 20px 0 0;
+            }
+
+            .commentContentBox {
+                width: 80%;
+
+                .commentUserName {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                p {
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        form {
+            width: 100%;
+            input {
+                background: $mainBodyColor;
+                width: 350px;
+                display: inline;
+                margin-right: 22px;
+                margin-bottom: 20px;
+                border: 0;
+                border-bottom: 1px solid $buttonColor;
+            
+            }
+            textarea {
+                background: $mainBodyColor;
+                width: 740px;
+                resize: none;
+                border: 1px solid $buttonColor;
+                height: 200px;
+            }
+            
+        }
     }
 }
+
 /* Contact Page Main Styles */
