@@ -1,4 +1,6 @@
-/* Main page header */
+/******************************
+* Main Page Header Styles     *
+/*****************************/
 
 header nav {
     display: flex;
@@ -28,9 +30,7 @@ nav {
     a {
         text-decoration: none;
         padding: 10px 20px;
-        
-        &:hover, &:focus {
-            
+        &:hover, &:focus {  
             text-decoration: underline;
             text-decoration-thickness: 3px;
             text-decoration-color: $boxShadowColor;
@@ -48,15 +48,15 @@ nav {
         bottom: -120px;
         left: 0;
     }
-
     h1 {
         width: 100px;
         padding-top: 30px;
     }
 }
 
-
-/* Blog page header */
+/******************************
+* Blog Page Header Styles     *
+/*****************************/
 
 .blogPage header {
     background: url(../../assets/blog-image.jpg);
@@ -74,12 +74,14 @@ nav {
             letter-spacing: 1.4px;
         }
     }
-
     h1 {
         margin-top: 100px;
     }
 }
-/* Contact page header */
+
+/******************************
+* Contact Page Header Styles  *
+/*****************************/
 
 .contactPage header {
     background: url(../../assets/contact-image.jpg);
@@ -97,7 +99,6 @@ nav {
             letter-spacing: 1.4px;
         }
     }
-
     h1 {
         margin-top: 100px;
     }

@@ -1,4 +1,6 @@
-/* Main @media Queries */
+/******************************
+* @media Query Styles         *
+/*****************************/
 
 @media (max-width: 1165px){
     .groupPrograms {
@@ -17,12 +19,13 @@
     h2 {
         font-size: 2.4rem;
     }
+
     .programs {
         text-align: center;
     }
+
     .locations {
         text-align: center;
-
         .locationsImage {
             order: -1;
         }

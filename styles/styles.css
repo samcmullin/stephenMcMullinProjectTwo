@@ -226,8 +226,25 @@ html {
   overflow: hidden;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 /* Positioning absolute */
 /* Centering */
+/* Page Colours */
+/* Font Colours */
+/* Make your life easier variables */
+/* Font Stack */
 html {
   font-size: 62.5%;
 }
@@ -290,11 +307,13 @@ h2 {
   background: #065635;
   font-family: "Kumar One", cursive;
   text-decoration: none;
-  color: white;
+  color: #F5F5F5;
   text-transform: uppercase;
 }
 
-/* Main page header */
+/******************************
+* Main Page Header Styles     *
+/*****************************/
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,7 +380,9 @@ nav a:hover, nav a:focus {
   padding-top: 30px;
 }
 
-/* Blog page header */
+/******************************
+* Blog Page Header Styles     *
+/*****************************/
 .blogPage header {
   background: url(../../assets/blog-image.jpg);
   height: 75vh;
@@ -390,7 +411,9 @@ nav a:hover, nav a:focus {
   margin-top: 100px;
 }
 
-/* Contact page header */
+/******************************
+* Contact Page Header Styles  *
+/*****************************/
 .contactPage header {
   background: url(../../assets/contact-image.jpg);
   height: 50vh;
@@ -419,7 +442,10 @@ nav a:hover, nav a:focus {
   margin-top: 100px;
 }
 
-/* Main Page Styles */
+/******************************
+* Main Page Header Styles     *
+/*****************************/
+/* Discovering New Materials Section */
 .newMaterials {
   background: #F5F5F5;
 }
@@ -456,6 +482,7 @@ nav a:hover, nav a:focus {
           box-shadow: -20px 20px #F8FB05;
 }
 
+/* Three Gallery Images Section */
 section.mainGalleryImages {
   background: #E0FDDF;
 }
@@ -485,6 +512,7 @@ section.mainGalleryImages .galleryImagesFlex li img {
   width: calc(100% - 60px);
 }
 
+/* Company Media Links Section */
 section.companyMedia {
   background: #F5F5F5;
 }
@@ -517,10 +545,13 @@ section.companyMedia .companyMediaFlex .card i {
   margin-right: 20px;
 }
 
+/* Group Programs and New Locations Section */
+/* Programs box */
 section.groupPrograms {
   background: #E0FDDF;
   padding-bottom: 100px;
   position: relative;
+  /* Locations Box */
 }
 
 section.groupPrograms .programs {
@@ -615,6 +646,7 @@ section.groupPrograms .locations div p {
   padding-bottom: 50px;
 }
 
+/* Search by Style Section */
 section.styleSearch {
   background: #F5F5F5;
 }
@@ -637,21 +669,9 @@ section.styleSearch .styleTextContent p {
   text-align: left;
 }
 
-footer {
-  background: #151514;
-}
-
-footer p {
-  color: white;
-  text-align: center;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-/* Blog Page Main Styles */
+/******************************
+* Blog Page Main Styles       *
+/*****************************/
 .blogMain {
   background: #E0FDDF;
 }
@@ -665,6 +685,7 @@ footer a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 60%;
+  /* Blog Page Form Section */
 }
 
 .blogMain .blogMainPost .blogContent {
@@ -736,6 +757,7 @@ footer a {
 
 .blogMain .blogMainPost form {
   margin-top: 40px;
+  min-width: 350px;
 }
 
 .blogMain .blogMainPost form input {
@@ -763,7 +785,9 @@ footer a {
   margin: 40px 0;
 }
 
-/* Contact Page Main Styles */
+/******************************
+* Contact Page Main Styles    *
+/*****************************/
 .contactPage {
   background: #E0FDDF;
 }
@@ -814,6 +838,11 @@ footer a {
 
 .contactSection .socialMediaLinks {
   margin-left: 100px;
+  margin-top: 100px;
+}
+
+.contactSection .socialMediaLinks ul {
+  margin-bottom: 20px;
 }
 
 .contactSection .socialMediaLinks ul li {
@@ -821,7 +850,36 @@ footer a {
   margin-right: 15px;
 }
 
-/* Main @media Queries */
+.contactSection .socialMediaLinks a {
+  text-decoration: none;
+  color: #151514;
+}
+
+.contactSection .socialMediaLinks p {
+  margin-bottom: 20px;
+}
+
+.contactSection .socialMediaLinks address {
+  font-style: normal;
+}
+
+footer {
+  background: #151514;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/******************************
+* @media Query Styles         *
+/*****************************/
 @media (max-width: 1165px) {
   .groupPrograms img {
     display: none;

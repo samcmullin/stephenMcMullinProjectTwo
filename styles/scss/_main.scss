@@ -1,4 +1,8 @@
-/* Main Page Styles */
+/******************************
+* Main Page Header Styles     *
+/*****************************/
+
+/* Discovering New Materials Section */
 
 .newMaterials {
     background: $contentBoxColor;
@@ -7,21 +11,15 @@
         flex-wrap: wrap;
         padding-bottom: 100px;
         padding-top: 150px;
-
         p {
             padding-bottom: 20px;
         }
         div.discoverContent {
-
             flex: 1 0 300px;
             padding: 20px;
-            // height: 100%;
         }
-
         div.discoverImage {
-            // width: 30%;
             flex: 0 0 300px;
-            
             img {
                 box-shadow: -20px 20px $boxShadowColor;
             }
@@ -29,9 +27,10 @@
     }
 }
 
+/* Three Gallery Images Section */
+
 section.mainGalleryImages {
     background: $mainBodyColor;
-
     .galleryImagesFlex {
         @include centerFlex();
         flex-wrap: wrap;
@@ -45,9 +44,10 @@ section.mainGalleryImages {
     }
 }
 
+/* Company Media Links Section */
+
 section.companyMedia {
     background: $contentBoxColor;
-
     .companyMediaFlex {
         @include centerFlex();
         flex-wrap: wrap;
@@ -55,7 +55,6 @@ section.companyMedia {
             display: flex;
             flex: 1 0 500px;
             padding: 40px 20px;
-            // padding: 40px 20px 100px 20px;
             i {
                 margin-right: 20px;
             }
@@ -63,16 +62,18 @@ section.companyMedia {
     }
 }
 
+/* Group Programs and New Locations Section */
+
+/* Programs box */
+
 section.groupPrograms {
     background: $mainBodyColor;
     padding-bottom: 100px;
     position: relative;
-
     .programs {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-
         .programsTextContent {
             align-self: flex-end;
             flex: 1 0 300px;
@@ -88,22 +89,21 @@ section.groupPrograms {
             width: 300px;
             flex: 1 0 50%;
             padding-top: 100px;
-
             h2 {
                 padding-bottom: 20px;
             }
-
             p {
                 padding-bottom: 50px;
             }
         }
     }
 
+    /* Locations Box */
+
     .locations {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-
         .locationsTextContent {
             margin-top: 50px;
             flex: 1 0 300px;
@@ -122,18 +122,17 @@ section.groupPrograms {
             width: 300px;
             flex: 1 0 50%;
             padding-top: 100px;
-            
             h2 {
                 padding-bottom: 20px;
             }
-
             p {
                 padding-bottom: 50px;
             }
-
         }
     } 
 }
+
+/* Search by Style Section */
 
 section.styleSearch {
     background: $contentBoxColor;
@@ -153,21 +152,9 @@ section.styleSearch {
     }
 }
 
-footer {
-    background: $footerColor;
-    p {
-        color: white;
-        text-align: center;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
-}
-
-/* Blog Page Main Styles */
+/******************************
+* Blog Page Main Styles       *
+/*****************************/
 
 .blogMain {
     background: $mainBodyColor;
@@ -214,15 +201,12 @@ footer {
 
         .commentBox {
             display: flex;
-
             .commentUserImage {
                 width: 20%;
                 padding: 30px 20px 0 0;
             }
-
             .commentContentBox {
                 width: 80%;
-
                 .commentUserName {
                     text-transform: uppercase;
                     font-weight: 700;
@@ -233,8 +217,11 @@ footer {
             }
         }
 
+        /* Blog Page Form Section */
+
         form {
             margin-top: 40px;
+            min-width: 350px;
             input {
                 background: $mainBodyColor;
                 width: 46%;
@@ -243,7 +230,6 @@ footer {
                 outline: none;
                 border: 0;
                 border-bottom: 1px solid $buttonColor;
-            
             }
             textarea {
                 background: $mainBodyColor;
@@ -262,7 +248,9 @@ footer {
     }
 }
 
-/* Contact Page Main Styles */
+/******************************
+* Contact Page Main Styles    *
+/*****************************/
 
 .contactPage {
     background: $mainBodyColor;
@@ -305,9 +293,23 @@ footer {
     }
     .socialMediaLinks {
         margin-left: 100px;
-        ul li {
+        margin-top: 100px;
+        ul {
+            margin-bottom: 20px;
+            li {
             display: inline-block;
             margin-right: 15px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $fontColor;
+        } 
+        p {
+            margin-bottom: 20px;
+        }
+        address {
+            font-style: normal;
         }
     }
 }
