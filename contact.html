@@ -7,11 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
+<body class="contactPage">
     <header>
         <div class="wrapper">
             <nav>
-                <p>Sanctuary Helpers</p> 
+                <h2>Sanctuary Helpers</h2> 
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -26,10 +26,18 @@
 
     <main>
         <div class="wrapper">
-            <section>
-                <div>
-                    <form action="">
-                        <!-- Add form structure -->
+            <section class="contactSection">
+                <div class="contactPageForm">
+                    <form action="#" method="#" name="myForm">
+                        <label for="name" class="sr-only"></label>
+                        <input type="text" id="name" name="name" placeholder="NAME" aria-describedby="name">
+                        <label for="email" class="sr-only"></label>
+                        <input type="text" id="email" name="email" placeholder="EMAIL ADDRESS" aria-describedby="email">
+        
+                        <label for="comment"></label>
+                        <textarea name="comment" id="comment" aria-label="comment"></textarea>
+        
+                        <button class="mainButton">Post Comment</button>
                     </form>
                 </div>
 

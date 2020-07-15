@@ -82,13 +82,14 @@
                         </div>
                     </div>
     
-                    <form action="POST">
-                        <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="NAME" aria-label="name">
-                        <label for="email"></label>
-                        <input type="text" id="email" name="email" placeholder="EMAIL ADDRESS" aria-label="email">
+                    <form action="#" method="#" name="myForm">
+                        <label for="name" class="sr-only"></label>
+                        <input type="text" id="name" name="name" placeholder="NAME" aria-describedby="name">
+                        <label for="email" class="sr-only"></label>
+                        <input type="text" id="email" name="email" placeholder="EMAIL ADDRESS" aria-describedby="email">
         
-                        <textarea name="comment" id="comment"></textarea>
+                        <label for="comment"></label>
+                        <textarea name="comment" id="comment" aria-label="comment"></textarea>
         
                         <button class="mainButton">Post Comment</button>
                     </form>
