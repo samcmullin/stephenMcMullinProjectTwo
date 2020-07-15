@@ -237,20 +237,16 @@ footer {
             margin-top: 40px;
             input {
                 background: $mainBodyColor;
-                // width: 350px;
                 width: 46%;
                 display: inline;
                 margin: 0 27px 50px 0;
                 outline: none;
-                // margin-right: 22px;
-                // margin-bottom: 20px;
                 border: 0;
                 border-bottom: 1px solid $buttonColor;
             
             }
             textarea {
                 background: $mainBodyColor;
-                // width: 740px;
                 width: 100%;
                 resize: none;
                 border: 1px solid $buttonColor;
@@ -261,13 +257,10 @@ footer {
                 border: 0;
                 padding: 15px 0;
                 margin: 40px 0;
-                // text-transform: uppercase;
-                // background: $buttonColor;
-                // border: 0;
-                // padding: 20px 0;
             }
         }
     }
 }
 
 /* Contact Page Main Styles */
+
