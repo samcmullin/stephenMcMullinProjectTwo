@@ -28,3 +28,15 @@
         }
     }
 }
+
+@media (max-width: 850px) {
+    .contactSection {
+        flex-direction: column;
+        align-items: center;
+        .contactPageForm {
+            margin-bottom: 40px;
+            min-width: 350px;
+            padding: 0 10px;
+        }
+    }
+}

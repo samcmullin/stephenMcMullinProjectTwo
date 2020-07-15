@@ -264,19 +264,25 @@ footer {
 
 /* Contact Page Main Styles */
 
+.contactPage {
+    background: $mainBodyColor;
+}
 
 .contactSection {
     display: flex;
     width: 100%;
+    margin-bottom: 100px;
     .contactPageForm {
         margin-top: 40px;
-        padding-top: 75px;
+        padding: 75px 10px 10px 10px;
         background: $contentBoxColor;
-        width: 75%;
+        width: 65%;
         margin: 0;
+        box-shadow: 20px 20px $boxShadowColor;
         input {
             background: $contentBoxColor;
-            width: 46%;
+            /* Why will this not do a width of 50%? Is this a calc() case? */
+            width: 45%; 
             display: inline;
             margin: 0 27px 50px 0;
             outline: none;
@@ -295,6 +301,13 @@ footer {
             border: 0;
             padding: 15px 0;
             margin: 40px 0;
+        }
+    }
+    .socialMediaLinks {
+        margin-left: 100px;
+        ul li {
+            display: inline-block;
+            margin-right: 15px;
         }
     }
 }
